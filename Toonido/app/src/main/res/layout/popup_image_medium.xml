@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <app.toonido.mindorks.toonido.custom.CustomButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/camera"
+        android:layout_weight="50"
+        android:gravity="center"
+        android:textColor="@color/cloud"
+        android:text="CAMERA"
+        android:textSize="18dp"
+        custom:typeface="Blogger Sans-Medium.ttf"
+        android:background="@color/wet_asphalt">
+        </app.toonido.mindorks.toonido.custom.CustomButton>
+    <app.toonido.mindorks.toonido.custom.CustomButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/gallery"
+        android:layout_weight="50"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/cloud"
+        android:text="GALLERY"
+        custom:typeface="Blogger Sans-Medium.ttf"
+        android:background="@color/midnight_blue">
+    </app.toonido.mindorks.toonido.custom.CustomButton>
+
+</LinearLayout>

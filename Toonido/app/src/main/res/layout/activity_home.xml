@@ -1,11 +1,100 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".HomeActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:gravity="center"
+    android:background="@color/greenish_black"
+    tools:context=".HomeActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:background="@color/greenish_black">
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:weightSum="100"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/greenish_black">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="75"
+            android:id="@+id/changeHeads"
+            android:gravity="center"
+            android:background="@color/emerland">
+            <app.toonido.mindorks.toonido.custom.CustomTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/cloud"
+                custom:typeface="Blogger Sans-Medium.ttf"
+                android:text="@string/change_heads"/>
+        </LinearLayout>
+    </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:weightSum="100"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/greenish_black">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/makeComic"
+            android:layout_weight="75"
+            android:gravity="center"
+            android:background="@color/turquoise">
+            <app.toonido.mindorks.toonido.custom.CustomTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/cloud"
+                custom:typeface="Blogger Sans-Medium.ttf"
+                android:text="@string/make_comic"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:weightSum="100"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/greenish_black">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="75"
+            android:id="@+id/funFeed"
+            android:gravity="center"
+            android:background="@color/peter_river">
+            <app.toonido.mindorks.toonido.custom.CustomTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/cloud"
+                custom:typeface="Blogger Sans-Medium.ttf"
+                android:text="@string/fun_feed"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:background="@color/greenish_black">
+    </LinearLayout>
+
+</LinearLayout>

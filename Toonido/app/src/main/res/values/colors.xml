@@ -1,5 +1,11 @@
 <resources>
 
-    <string name="bluish_green">#66CCCC</string>
+    <color name="turquoise">#14B389</color>
+    <color name="emerland">#23C759</color>
+    <color name="peter_river">#2682D7</color>
+    <color name="wet_asphalt">#4A5A6B</color>
+    <color name="midnight_blue">#222F3F</color>
+    <color name="greenish_black">#4A5857</color>
+    <color name="cloud">#E7ECEE</color>
 
 </resources>

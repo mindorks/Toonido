@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Toonido</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="change_heads">CHANGE HEADS</string>
+    <string name="make_comic">MAKE COMIC</string>
+    <string name="fun_feed">FUN FEED</string>
 </resources>
