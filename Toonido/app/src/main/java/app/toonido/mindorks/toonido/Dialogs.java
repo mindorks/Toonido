@@ -25,7 +25,8 @@ public class Dialogs {
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context,"Camera",Toast.LENGTH_SHORT).show();
+                Intent i= new Intent(context,PhotoActivity.class);
+                context.startActivity(i);
             }
         });
 
